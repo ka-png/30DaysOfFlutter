@@ -5,12 +5,10 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    int days = 30;
-    String name = "Codepur";
+    final int days = 30;
+    final String name = "Codepur";
 
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
+    return Scaffold(
         appBar: AppBar(
           title: Text("Catalog App"),
         ),
@@ -19,7 +17,6 @@ class HomePage extends StatelessWidget {
               child: Text("Welcome to $days days of flutter by ${name}")),
         ),
         drawer: Drawer(),
-      ),
-    );
+      );
   }
 }
